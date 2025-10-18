@@ -27,6 +27,6 @@ def filter_dictionary(letters: str) -> typing.Generator[str]:
 @click.argument("letters", callback=validate_letters)
 def solve(letters: str):
     """LETTERS should contain the 7 spelling bee letters, with the middle letter first"""
-    valid_words = sorted(list(filter_dictionary(letters)), key=len)
+    valid_words = sorted(filter_dictionary(letters), key=len)
     for word in valid_words:
         print(word)
