@@ -1,0 +1,18 @@
+[project]
+name = "bee"
+version = "0.1.0"
+description = "Spelling Bee solver"
+authors = [
+    {name = "Tim Nyborg",email = "tim.nyborg@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "english-words (>=2.0.2,<3.0.0)",
+    "click (>=8.3.0,<9.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
