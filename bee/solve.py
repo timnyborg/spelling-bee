@@ -30,7 +30,3 @@ def solve(letters: str):
     valid_words = sorted(list(filter_dictionary(letters)), key=len)
     for word in valid_words:
         print(word)
-
-
-if __name__ == "__main__":
-    solve()
