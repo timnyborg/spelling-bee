@@ -19,7 +19,7 @@ def filter_dictionary(letters: str) -> typing.Generator[str]:
     yield from (
         word
         for word in DICTIONARY
-        if len(word) >= 4 and word.startswith(letters[0]) and not set(word) - letter_set
+        if len(word) >= 4 and letters[0] in word and not set(word) - letter_set
     )
 
 
